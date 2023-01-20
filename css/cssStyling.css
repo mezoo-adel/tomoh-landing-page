@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    --redColor: #C3143E;
+    --backShadow: #AfAEAE4F;
+    --redBackground: #c3143d38;
+    --darkBlue: #0f2554;
+    /* scroll-behavior: smooth; */
+    
+}
+
+i , a{
+    margin: 6px 0px 6px 6px;
+    color: #fff;
+    font-size: large;
+    text-decoration: none;
+}
+
+#problemTitle,
+#helpedTitle {
+    color: #fff;
+    background-color: var(--redColor);
+    padding: 8px 10px;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: -3px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#problemDialoge {
+    color: #fff;
+    background-color: #a1a1a198;
+    margin: auto;
+    width: 90%;
+    height: 26.5em;
+    border-radius: 25px;
+}
+
+#makeOrder {
+    width: fit-content;
+    border: transparent 0px solid;
+    color: #fff;
+    font-size: 15px;
+    background-color: var(--redColor);
+    margin: 3.4rem auto;
+    border-radius: 10px;
+    padding: 4px 7px;
+
+}
+
+#whyUsTitle {
+    color: var(--redColor);
+    margin: auto;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+#whyUsShadow {
+    background-color: var(--backShadow);
+    height: 1.25em;
+    border-radius: 25px;
+    margin-top: -1.25rem;
+    margin-bottom: 3.75rem;
+}
+
+.selector div:nth-child(1) {
+    background-color: var(--backShadow);
+}
+
+.selector div:nth-child(2) {
+    -webkit-text-fill-color: var(--darkBlue);
+}
+
+.featureBack {
+    position: absolute;
+    background-color: var(--redBackground);
+    border-radius: 50px;
+    width: 4rem;
+    height: 4rem;
+
+}
+
+.featureNum {
+    margin-top: -.1rem;
+    position: absolute;
+    padding-right: 2rem;
+    font-size: 3.5em;
+    font-weight: 800;
+    -webkit-text-fill-color: var(--redColor);
+    -webkit-text-stroke: 1px #fff;
+    /* text-shadow: 3px 3px  1px gainsboro ,-2px -2px  1px gainsboro; */
+}
+
+.featureContent {
+    font-size: large;
+    font-weight: 500;
+}
+
+.alignFeaturesCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alignFeaturesNum {
+    margin-bottom: 5rem;
+    margin-right: -4rem;
+}
+
+#helpedDialoge {
+    color: #fff;
+    background-color: #C3143E;
+    margin: auto;
+    width: 75%;
+    height: 22rem;
+    border-radius: 15px;
+}
+
+
+#helpedTitle {
+    background-color: var(--darkBlue);
+}
+
+.helpedNumbers {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+#helpedDialoge>div div:nth-of-type(2) p {
+    font-size: 2.5rem;
+
+}
+
+#helped img {
+    width: 24%;
+    height: 50px;
+    object-fit: cover;
+}
+
+#flagsCountry {
+    background-color: #fff;
+    border-radius: 15px 25px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    width: 34%;
+
+}
+
+#flagsCountry img {
+    margin: auto;
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* form STYLING */
+.background-radial-gradient {
+
+    background-image: radial-gradient(650px circle at 0% 0%,
+            hsl(221, 8%, 54%) 15%,
+            hsl(215, 6%, 41%) 35%,
+            hsl(227, 7%, 27%) 75%,
+            hsl(225, 8%, 28%) 80%,
+            transparent 100%),
+            
+        radial-gradient(1250px circle at 100% 100%,
+            hsl(219, 6%, 45%) 15%,
+            hsl(216, 5%, 37%) 35%,
+            hsl(220, 7%, 26%) 75%,
+            hsl(216, 4%, 24%) 80%,
+            transparent 100%);
+
+            
+}
+
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(var(--redColor), var(--redBackground));
+    overflow: hidden;
+}
+
+#radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(var(--redColor), var(--redBackground));
+    overflow: hidden;
+}
+
+.bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+}
+
+.bg-glass input,
+option {
+    text-align: right;
+}
+/* ENDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD OF FORMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm */
+
+#footer{
+    background-color:  #A1A1A1;
+}
+@media (max-width:776px) {
+
+    /* Make Image In the Back Of Text On Top Page */
+    #headSection section:nth-child(1) {
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    #headSection section:nth-child(2) {
+        z-index: -1;
+    }
+
+    #helpedDialoge , #helpedTitle ,#problemTitle
+    ,#problemDialoge{
+        width: 90%;
+    }
+}
