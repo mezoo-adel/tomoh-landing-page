@@ -35,7 +35,7 @@ i , a{
     margin: auto;
     width: 90%;
     height: 26.5em;
-    border-radius: 25px;
+    border-radius: 0px 0px 25px 25px;
 }
 
 #makeOrder {
@@ -116,7 +116,8 @@ i , a{
     margin: auto;
     width: 75%;
     height: 22rem;
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
+
 }
 
 
